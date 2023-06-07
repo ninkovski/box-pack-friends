@@ -8,13 +8,18 @@
 .product-card .card-content {
   padding: 1rem;
 }
-
-@media screen and (max-width: 768px) {
-  .columns.is-multiline .column {
-    flex-basis: 100%;
-  }
+.card {
+    margin-bottom: 20px;
 }
-
+@media screen and (max-width: 768px) {
+    .columns:not(.is-multiline) {
+            flex-direction: column;
+        }
+}
+.is-multiline {
+    display: flex;
+    flex-direction: row;
+}
 .fixed-button {
   position: fixed;
   bottom: 20px;
